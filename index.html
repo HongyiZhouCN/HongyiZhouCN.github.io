@@ -57,28 +57,38 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
             <!-- <tr style="background-color: #ffffd0;"> -->
-            <tr>
+
+            <tr style="background-color: #ffffd0;">
+            <!-- <tr> -->
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <div style="display: flex;">
                   <div style="flex: 0 0 25%; max-width: 25%;">
-                    <img src='images/toperl_critic.png' style="width: 100%; max-width: 100%;">
+                    <!-- <img src='images/beast_tokenizer.png' style="width: 100%; max-width: 100%;"> -->
+                    <img src='images/beast_tokenizer.png' style="width: 100%; max-width: 100%;">
+                    <img src='images/sweep.gif' style="width: 100%; max-width: 100%;">
                   </div>
                   <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                    <a href="https://arxiv.org/abs/2410.09536">
-                      <papertitle>TOP-ERL: Transformer-based Off-Policy Episodic Reinforcement Learning</papertitle>
+                    <a href="https://arxiv.org/abs/2506.06072">
+                      <papertitle>BEAST: Efficient Tokenization of B-Splines Encoded Action Sequences for Imitation Learning</papertitle>
                     </a>
                     <br>
-                    Ge Li, Dong Tian, <strong>Hongyi Zhou</strong>, Xinkai Jiang,
-                    Rudolf Lioutikov, Gerhard Neumann<br>
+                    <strong>Hongyi Zhou</strong>,
+                    Weiran Liao, Xi Huang, Yucheng Tang, Fabian Otto, Xiaogang Jia, Xinkai Jiang, Simon Hilber, Ge Li, Qian Wang, Ömer Erdinç Yağmurlu, Nils Blank, Moritz Reuss
+                    <a href="https://alr.anthropomatik.kit.edu/21_65.php">Rudolf Lioutikov</a> <br>
                     <br>
-                    Preprint, Under Review
+                    NeurIPS 2025, Poster
                     <br>
-                    <a href="https://arxiv.org/abs/2410.09536">arXiv</a>
+                    <a href="https://intuitive-robots.github.io/beast_website/">Project Page</a>
+                    /
+                    <a href="https://github.com/intuitive-robots/beast_calvin">Code</a>
+                    /
+                    <a href="https://arxiv.org/abs/2506.06072">arXiv</a>
                     <p></p>
                     <p>
-                    This work introduces Transformer-based Off-Policy Episodic Reinforcement Learning (TOP-ERL), 
-                    a novel algorithm that enables off-policy updates in the ERL framework. ERL methods are often constrained to on-policy frameworks due to the difficulty of evaluating state-action values for entire action sequences, limiting their sample efficiency and preventing the use of more efficient off-policy architectures. 
-                    TOP-ERL addresses this shortcoming by segmenting long action sequences and estimating the state-action values for each segment using a transformer-based critic architecture alongside an n-step return estimation.
+                   We present the B-spline Encoded Action Sequence Tokenizer (BEAST), a novel action tokenizer that encodes action sequences into compact discrete or continuous 
+                   tokens using B-splines. In contrast to existing action tokenizers based on vector quantization or byte pair encoding, BEAST requires no separate tokenizer 
+                   training and consistently produces tokens of uniform length, enabling fast action sequence generation via parallel decoding. 
+                   Leveraging our B-spline formulation, BEAST inherently ensures generating smooth trajectories without discontinuities between adjacent segments.
                     </p>
                   </div>
                 </div>
@@ -116,6 +126,89 @@
                    We introduce Variational Diffusion Distillation (VDD), a novel method that distills denoising diffusion policies into Mixtures of Experts (MoE) through variational inference. 
                    VDD is the first method that distills pre-trained diffusion models into MoE models, and hence, combines the expressiveness of Diffusion Models with the benefits of Mixture Models. 
                    Specifically, VDD leverages a decompositional upper bound of the variational objective that allows the training of each expert separately, resulting in a robust optimization scheme for MoEs. 
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tbody>
+              <tr style="background-color: #ffffd0;">
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                    <div style="display: flex;">
+                      <div style="flex: 0 0 25%; max-width: 25%;">
+                        <img src='images/mp3_tt.gif' style="width: 100%; max-width: 100%;">
+                      </div>
+                        <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
+                            <a href="https://intuitive-robots.github.io/mp3_website/">
+                                <papertitle>MP3: Movement Primitive-Based (Re-)Planning Policy</papertitle>
+                            </a>
+                            <br>
+                            <strong>Hongyi Zhou*</strong>, Fabian Otto*, Onur Celik, Ge Li, Rudolf Lioutikov, Gerhard Neumann
+                            <br> * Equal contribution
+                            <br>
+                            <br>
+                            <em> CoRL Workshop LEAP, 2023.
+                            <br>
+                            <a href="https://intuitive-robots.github.io/mp3_website/">project page</a> 
+                            /
+                            <a href="https://arxiv.org/pdf/2306.12729">arXiv</a>
+                            <p></p>
+                            <p>
+                            We introduce a novel deep reinforcement learning (RL) approach called Movement Primitive-based Planning Policy (MP3). By integrating movement primitives (MPs) into the deep RL
+                            framework, MP3 enables the generation of smooth trajectories throughout the whole learning process while effectively learning from sparse and non-Markovian rewards. Additionally,
+                            MP3 maintains the capability to adapt to changes in the environment during execution.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <div style="display: flex;">
+                  <div style="flex: 0 0 25%; max-width: 25%;">
+                    <img src='images/flower.png' style="width: 100%; max-width: 100%;">
+                  </div>
+                  <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
+                    <a href="https://arxiv.org/abs/2410.09536">
+                      <papertitle>FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies</papertitle>
+                    </a>
+                    <br>
+                    Moritz Reuss, <strong>Hongyi Zhou</strong>, 
+                    Marcel Rühle, Ömer Erdinç Yağmurlu, Fabian Otto, Rudolf Lioutikov
+                    <br>
+                    CoRL 2025, Poster
+                    <br>
+                    <a href="https://arxiv.org/abs/2410.09536">arXiv</a>
+                    <p></p>
+                    <p>
+                    This work introduces FLOWER, an efficient, open-source Vision-Language-Action Flow policy. Vision-Language-Action (VLA) models have demonstrated remarkable potential for language-guided robotic manipulation by leveraging large-scale vision-language pretraining. However, existing approaches often rely on multi-billion-parameter architectures and massive datasets, making them prohibitively expensive to train. FLOWER is a novel generalist policy that not only outperforms current VLAs but also substantially lowers the computational burden for pretraining, fine-tuning, and inference. FLOWER combines a Rectified Flow Policy with a compact Vision-Language Model (VLM) backbone. The Flow Policy enables expressive, multimodal action generation. The compact VLM backbone provides robust semantic grounding while requiring only a fraction of the usual compute cost. 
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <div style="display: flex;">
+                  <div style="flex: 0 0 25%; max-width: 25%;">
+                    <img src='images/toperl_critic.png' style="width: 100%; max-width: 100%;">
+                  </div>
+                  <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
+                    <a href="https://arxiv.org/abs/2410.09536">
+                      <papertitle>TOP-ERL: Transformer-based Off-Policy Episodic Reinforcement Learning</papertitle>
+                    </a>
+                    <br>
+                    Ge Li, Dong Tian, <strong>Hongyi Zhou</strong>, Xinkai Jiang,
+                    Rudolf Lioutikov, Gerhard Neumann<br>
+                    <br>
+                    ICLR 2025, <strong>Spotlight</strong>
+                    <br>
+                    <a href="https://arxiv.org/abs/2410.09536">arXiv</a>
+                    <p></p>
+                    <p>
+                    This work introduces Transformer-based Off-Policy Episodic Reinforcement Learning (TOP-ERL), 
+                    a novel algorithm that enables off-policy updates in the ERL framework. ERL methods are often constrained to on-policy frameworks due to the difficulty of evaluating state-action values for entire action sequences, limiting their sample efficiency and preventing the use of more efficient off-policy architectures. 
+                    TOP-ERL addresses this shortcoming by segmenting long action sequences and estimating the state-action values for each segment using a transformer-based critic architecture alongside an n-step return estimation.
                     </p>
                   </div>
                 </div>
@@ -208,37 +301,7 @@
               </tbody>
             </table>
             
-            <tbody>
-              <tr style="background-color: #ffffd0;">
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <div style="display: flex;">
-                      <div style="flex: 0 0 25%; max-width: 25%;">
-                        <img src='images/mp3_tt.gif' style="width: 100%; max-width: 100%;">
-                      </div>
-                        <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                            <a href="https://intuitive-robots.github.io/mp3_website/">
-                                <papertitle>MP3: Movement Primitive-Based (Re-)Planning Policy</papertitle>
-                            </a>
-                            <br>
-                            Fabian Otto*, <strong>Hongyi Zhou*</strong>, Onur Celik, Ge Li, Rudolf Lioutikov, Gerhard Neumann
-                            <br> * Equal contribution
-                            <br>
-                            <br>
-                            <em>Under Review, 2023
-                            <br>
-                            <a href="https://intuitive-robots.github.io/mp3_website/">project page</a> 
-                            /
-                            <a href="https://arxiv.org/pdf/2306.12729">arXiv</a>
-                            <p></p>
-                            <p>
-                            We introduce a novel deep reinforcement learning (RL) approach called Movement Primitive-based Planning Policy (MP3). By integrating movement primitives (MPs) into the deep RL
-                            framework, MP3 enables the generation of smooth trajectories throughout the whole learning process while effectively learning from sparse and non-Markovian rewards. Additionally,
-                            MP3 maintains the capability to adapt to changes in the environment during execution.
-                            </p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
+
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <div style="display: flex;">
